@@ -57,6 +57,7 @@ public class ApplicationProcessor extends AbstractProcessor {
             Elements elements,
             TypeElement type,
             Class<? extends Annotation>... annotations) {
+
         Set<Element> found = new HashSet<>();
         Set<Class<? extends Annotation>> scan = new HashSet<>();
         Collections.addAll(scan, annotations);

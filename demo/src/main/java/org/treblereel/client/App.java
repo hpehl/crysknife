@@ -10,6 +10,8 @@ import org.treblereel.gwt.crysknife.client.ComponentScan;
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
+import static elemental2.core.Global.JSON;
+
 @Application
 @ComponentScan("org.treblereel.client.inject")
 public class App implements EntryPoint {
@@ -51,5 +53,7 @@ public class App implements EntryPoint {
         RootPanel.get().add(singletonBeans);
         RootPanel.get().add(dependentBeans);
         RootPanel.get().add(transitiveInjection);
+
+        JSON.parse("")
     }
 }
